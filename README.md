@@ -1,113 +1,209 @@
-<img src="https://raw.githubusercontent.com/kelaberetiv/TagUI/master/src/media/tagui_logo.png" height="111" align="right">
-
-# TagUI
->**NOTICE: The AISG team is discontinuing the maintenance and support of TagUI. As of Q4 2023, we will no longer provide updates or support. Meanwhile, do expect delayed response from our team. It is easy to migrate TagUI .tag workflow files to Python rpa package .py scripts. [See this link](https://github.com/tebelorg/RPA-Python/issues/484).**
-
-**To start, click the download link below. Take the [free course](https://learn.aisingapore.org/courses/learn-rpa-with-tagui-beginners-course/). Ask any questions at [our Telegram](https://t.me/rpa_chat).**
-
-**[Download v6.114](https://tagui.readthedocs.io/en/latest/setup.html)&ensp;|&ensp;[Usage Guide](https://tagui.readthedocs.io/en/latest/index.html)&ensp;|&ensp;[Demos](https://github.com/aimakerspace/TagUI-Bricks)&ensp;|&ensp;[Samples](https://github.com/kelaberetiv/TagUI/tree/master/flows/samples)&ensp;|&ensp;[Slides](https://docs.google.com/presentation/d/1pltAMzr0MZsttgg1w2ORH3ontR6Q51W9/edit?usp=sharing&ouid=115132044557947023533&rtpof=true&sd=true)&ensp;|&ensp;[Podcast](https://botnirvana.org/podcast/tagui/)&ensp;|&ensp;[Video](https://www.youtube.com/watch?v=C5itbB3sCq0)&ensp;|&ensp;[中文](http://www.tagui.com.cn)**
-
----
-
-Write flows in simple TagUI language and automate away repetitive time-consuming tasks on your computer. Tasks include those on websites (native support for Chrome and Edge), desktop apps, or the command line. The TagUI project is open-source and free forever. It's easy to setup and use, and works on Windows, macOS and Linux.
-
-Besides English, flows can be written in [22 other languages](https://github.com/kelaberetiv/TagUI/tree/master/src/languages), so you can do RPA using your [native language](https://github.com/kelaberetiv/TagUI/blob/master/flows/samples/8_chineseflow.tag). Check out this [demo video automating data collection](https://www.youtube.com/watch?v=o2WMUt0298U) in 4 different languages. With the new TagUI turbo mode, you can even run your automation 10X faster than normal human speed!
-
-# Language designed for RPA
-
-In TagUI language, you use steps like `click` and `type` to interact with identifiers, which include web identifiers, image snapshots, screen coordinates, or [even text using OCR](https://tagui.readthedocs.io/en/latest/advanced.html#visual-automation-tricks). Below is an example to login to Xero accounting:
-
-```
-https://login.xero.com/identity/user/login
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/kelaberetiv/TagUI/master/src/media/tagui_logo.png"><img src="https://raw.githubusercontent.com/kelaberetiv/TagUI/master/src/media/tagui_logo.png" height="111" align="right" style="max-width: 100%;"></a></p>
+<h1 tabindex="-1" dir="auto"><a id="user-content-tagui" class="anchor" aria-hidden="true" tabindex="-1" href="#tagui"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签用户界面</font></font></h1>
+<blockquote>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：AISG 团队将停止对 TagUI 的维护和支持。</font><font style="vertical-align: inherit;">自 2023 年第四季度起，我们将不再提供更新或支持。</font><font style="vertical-align: inherit;">同时，我们的团队可能会延迟回复。</font><font style="vertical-align: inherit;">将 TagUI .tag 工作流文件迁移到 Python rpa 包 .py 脚本很容易。</font></font><a href="https://github.com/tebelorg/RPA-Python/issues/484" data-hovercard-type="issue" data-hovercard-url="/tebelorg/RPA-Python/issues/484/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅此链接</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></strong></p>
+</blockquote>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">首先，请单击下面的下载链接。</font><font style="vertical-align: inherit;">参加</font></font><a href="https://learn.aisingapore.org/courses/learn-rpa-with-tagui-beginners-course/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">免费课程</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">如有任何问题，请通过</font></font><a href="https://t.me/rpa_chat" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的 Telegram</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提问。</font></font></strong></p>
+<p dir="auto"><strong><a href="https://tagui.readthedocs.io/en/latest/setup.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载v6.114</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> &ensp;|&ensp;</font></font><a href="https://tagui.readthedocs.io/en/latest/index.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&ensp;|&ensp;</font></font><a href="https://github.com/aimakerspace/TagUI-Bricks"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&ensp;|&ensp;</font></font><a href="https://github.com/kelaberetiv/TagUI/tree/master/flows/samples"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">样品</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&ensp;|&ensp;</font></font><a href="https://docs.google.com/presentation/d/1pltAMzr0MZsttgg1w2ORH3ontR6Q51W9/edit?usp=sharing&amp;ouid=115132044557947023533&amp;rtpof=true&amp;sd=true" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">幻灯片</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&ensp;|&ensp;</font></font><a href="https://botnirvana.org/podcast/tagui/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">播客</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&ensp;|&ensp;</font></font><a href="https://www.youtube.com/watch?v=C5itbB3sCq0" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">视频</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&ensp;|&ensp; </font></font><a href="http://www.tagui.com.cn" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">English</font></font></a></strong></p>
+<hr>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用简单的 TagUI 语言编写流程，并在计算机上自动执行重复的耗时任务。</font><font style="vertical-align: inherit;">任务包括网站（Chrome 和 Edge 的本机支持）、桌面应用程序或命令行上的任务。</font><font style="vertical-align: inherit;">TagUI 项目是开源且永久免费的。</font><font style="vertical-align: inherit;">它易于设置和使用，并且适用于 Windows、macOS 和 Linux。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://github.com/kelaberetiv/TagUI/tree/master/src/languages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">除了英语之外，流程还可以用其他 22 种语言</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编写，因此您可以使用您的</font></font><a href="https://github.com/kelaberetiv/TagUI/blob/master/flows/samples/8_chineseflow.tag"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">母语</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">进行 RPA </font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">查看此</font></font><a href="https://www.youtube.com/watch?v=o2WMUt0298U" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示视频，</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以 4 种不同的语言自动收集数据。</font><font style="vertical-align: inherit;">借助新的 TagUI Turbo 模式，您甚至可以比正常人类速度快 10 倍运行自动化！</font></font></p>
+<h1 tabindex="-1" dir="auto"><a id="user-content-language-designed-for-rpa" class="anchor" aria-hidden="true" tabindex="-1" href="#language-designed-for-rpa"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">专为 RPA 设计的语言</font></font></h1>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 TagUI 语言中，您可以使用</font></font><code>click</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和等步骤</font></font><code>type</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与标识符进行交互，其中包括 Web 标识符、图像快照、屏幕坐标，甚至</font></font><a href="https://tagui.readthedocs.io/en/latest/advanced.html#visual-automation-tricks" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 OCR 的文本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">以下是登录 Xero 会计的示例：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>https://login.xero.com/identity/user/login
 type email as user@gmail.com
 type password as 12345678
 click Log in
-```
-```
-// besides web identifiers, images of UI elements can be used
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="https://login.xero.com/identity/user/login
+type email as user@gmail.com
+type password as 12345678
+click Log in" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>// besides web identifiers, images of UI elements can be used
 type email_box.png as user@gmail.com
 type password_box.png as 12345678
 click login_button.png
-```
-
-Grabbing data from a table on a website can be [as easy as below](https://tagui.readthedocs.io/en/latest/reference.html#table) (where n is the nth table on the webpage)
-
-```
-table n to forex_rates.csv
-```
-
-Moving data between TagUI and Excel is as easy as using [standard Excel formula](https://tagui.readthedocs.io/en/latest/reference.html#excel) that you are familiar with
-```
-top_salesman = [Monthly Report.xlsx]August!E11
-```
-
-Sending a Telegram notification is trivially easy ([first message @taguibot](https://tagui.readthedocs.io/en/latest/reference.html#telegram) to authorise it to send messages)
-
-```
-telegram id Hello World. Olá Mundo. नमस्ते दुनिया. 안녕하세요 세계. 世界,你好。
-```
-
-# Do RPA Any Way You Want
-
-You can use TagUI [MS Office Plug-ins](https://github.com/kelaberetiv/TagUI/blob/master/src/office/README.md) ([sample doc](https://github.com/kelaberetiv/TagUI/files/7031942/Week.3.docx)) to easily create and deploy Word doc as RPA robots, and set up RPA data parameters using Excel. Enjoy a full-featured RPA IDE with toolbar of TagUI steps and tooltips, snapshot tool to automate using computer vision, task pane for settings and run output. 
-
-You can also create and edit your RPA robots using commonly used text editors like Notepad, Notepad++, VS Code, Sublime, TextEdit, Vim, etc. For VS Code users, you can install [TagUI language extension](https://marketplace.visualstudio.com/items?itemName=TagUisupport.tagui-support). For Notepad++ users, you can download [TagUI plug-ins here](https://github.com/tilyanPristka/TagUI-Snippets-for-NotepadPP) for syntax highlighting, shortcuts and snippets.
-
-For cloud lovers, you can run TagUI on your web browser or phone using [free Google Cloud](https://github.com/kelaberetiv/TagUI/issues/913), up to 5 concurrent sessions. For more control running on the cloud, you can run this [Docker image](https://hub.docker.com/r/openiap/nodered-tagui) (use edge tag) on your preferred vendor. Or run on [free Node-RED instance](https://app.openiap.io/) on OpenFlow.
-
-![Word Plug-in v3](https://raw.githubusercontent.com/kelaberetiv/TagUI/master/src/office/word/word_addin_v3.png)
-
-# Ecosystem and Communities
-
-TagUI has a bustling user community, and extended community champions create new RPA tools for their own communities, based on TagUI. Python users can [pip install rpa](https://github.com/tebelorg/RPA-Python) to use the #1 Python RPA package. Already there is [TagUI for C# .NET](https://www.nuget.org/packages/tagui), and TagUI for Go is being built. For event-driven RPA with thousands of connectors, check out [TagUI module for Node-RED](https://flows.nodered.org/node/node-red-contrib-tagui), a popular free and open-source workflow automation tool.
-
-For Microsoft [Power Automate Desktop](https://flow.microsoft.com/en-us/desktop/) users, you'll be happy to know that there's 2-way integration with TagUI out of the box (for business continuity if you switch between the 2 apps). Also, do check out other leading open-source RPA tools, to see if they meet your needs better - [OpenRPA](https://github.com/open-rpa/openrpa) & [OpenFlow](https://github.com/open-rpa/openflow), [OpenBots](https://www.linkedin.com/posts/openbots_openbots-studio-demo-support-for-tag-ui-activity-6788174021964943361-RrUD), [Robocorp](https://youtu.be/HAfQpNZVbKI). All of them support enterprise-grade orchestrating and running TagUI robots from their orchestrator.
-
-There is also a Chinese [usage guide](http://www.tagui.com.cn) and [TagUI repository](https://gitee.com/TagUIcn). We welcome more languages with open arms.
-
-# Enterprise Security by design
-
-Security Considerations
-- TagUI default implementation is an on-user-computer on-prem RPA tool that does not exist on any cloud
-- TagUI is not a SaaS or software on the cloud running on vendor's cloud, it runs on actual users' computers
-- Industry-specific certifications like PCI-DSS, HIPAA, SOX aren't applicable because TagUI doesn't store data
-- In decentralised bottom-up RPA, not advisable and no need for bot credentials as users are held accountable
-
-Data Considerations
-- For data at rest, storage encryption would be on user's computer's OS-level as it is run on user's computer
-- For data in use, recommend user to manually enter sensitive info like password before letting robot take over
-- For data in motion, users' enterprise app websites are now https by default for secure data entry and retrieval
-
-More Information
-- [See this guide](https://github.com/kelaberetiv/TagUI/raw/master/src/media/TagUI%20Enterprise%20Setup%20v1.7.docx) on enterprise installation, including whitelisting details, TagUI architecture and dependencies
-- With -report option, there is a summary and detailed logs of robots, with support for centralised reporting
-
-# How to get started
-
-Join the community and ask any questions at our [Telegram chat group](https://t.me/rpa_chat). Take [TagUI free course](https://learn.aisingapore.org/courses/learn-rpa-with-tagui-beginners-course/) over one morning or afternoon, and start using the most popular open-source RPA software. Share this [TagUI slide deck](https://docs.google.com/presentation/d/1pltAMzr0MZsttgg1w2ORH3ontR6Q51W9/edit?usp=sharing&ouid=115132044557947023533&rtpof=true&sd=true) with your team or customers to win their buy-in to use TagUI.
-
-If you are maintaining your own fork of TagUI (for eg tech leads, RPA consultants, individual developers), see this [maintainer training video series](https://www.youtube.com/watch?v=oq8HlJujraE) to understand how TagUI works behind the scenes, and for you to modify all aspects of TagUI and extend the software to your customers' exact needs, made-to-measure.
-
-# TagUI v5.11
-For technical details of TagUI, such as architecture diagram and codebase structure, [see the old homepage](https://github.com/kelaberetiv/TagUI/tree/pre_v6) 
-
-# Credits
-
-Open-source project|Maintainer|From|How does this contribute to TagUI project
-:------------------|:---------|:---|:----------------------------------------
-[TagUI for China](http://www.tagui.com.cn)|[报表哥](https://www.zhihu.com/people/baobiaoge)|China|usage guide and repository in Chinese
-[TagUI for Notepad++](https://github.com/tilyanPristka/TagUI-Snippets-for-NotepadPP)|[Md Ardyansyah](https://www.linkedin.com/in/muhammad-ardyansyah/)|Indonesia|various TagUI plug-ins for Notepad++
-[TagUI for VS Code](https://marketplace.visualstudio.com/items?itemName=TagUisupport.tagui-support)|[Subhas Malik](https://www.linkedin.com/in/subhasmalik/)|India|language extension for Visual Studio Code
-[TagUI for Robocorp](https://youtu.be/HAfQpNZVbKI)|[Nived N](https://www.linkedin.com/in/nived-n-776470139/)|India|run TagUI in Robocorp or Robot Framework
-[TagUI for Node-RED](https://flows.nodered.org/node/node-red-contrib-tagui)|[Allan Zimmermann](https://www.linkedin.com/in/skadefro/)|Denmark|low-code event-driven workflow automation
-[TagUI for C# .NET](https://www.nuget.org/packages/tagui)|[Allan Zimmermann](https://www.linkedin.com/in/skadefro/)|Denmark|C# version of TagUI (Install-Package tagui)
-[TagUI for Docker](https://hub.docker.com/r/openiap/nodered-tagui)|[Allan Zimmermann](https://www.linkedin.com/in/skadefro/)|Denmark|replicable RPA environment for everyone
-[RPA for Python](https://github.com/tebelorg/RPA-Python)|[Ken Soh](https://github.com/kensoh)|Singapore|Python version of TagUI (pip install rpa)
-[TagUI v3.0](https://github.com/kensoh/TagUI/tree/before_aisg)|[Ken Soh](https://github.com/kensoh)|Singapore|personal project before AI Singapore
-[SikuliX](http://sikulix.com)|[Raimund Hocke](https://github.com/RaiMan/)|Germany|computer vision, OCR, input hardware
-[CasperJS](http://casperjs.org)|[Nicolas Perriault](https://github.com/n1k0)|France|high-level JavaScript execution engine
-[PhantomJS](https://github.com/ariya/phantomjs)|[Ariya Hidayat](https://github.com/ariya)|Indonesia|foundation JavaScript execution engine
-[SlimerJS](https://slimerjs.org)|[Laurent Jouanneau](https://github.com/laurentj)|France|browser automation for FireFox <= v59
-
-# Sponsor
-This project  is supported by the [National Research Foundation](https://www.nrf.gov.sg), Singapore under its AI Singapore Programme (AISG-RP-2019-050). Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not reflect the views of National Research Foundation, Singapore.
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="// besides web identifiers, images of UI elements can be used
+type email_box.png as user@gmail.com
+type password_box.png as 12345678
+click login_button.png" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从网站上的表格中获取数据可以</font></font><a href="https://tagui.readthedocs.io/en/latest/reference.html#table" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">像下面一样简单</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（其中 n 是网页上的第 n 个表格）</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>table n to forex_rates.csv
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="table n to forex_rates.csv" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 TagUI 和 Excel 之间移动数据就像使用</font><font style="vertical-align: inherit;">您熟悉的</font></font><a href="https://tagui.readthedocs.io/en/latest/reference.html#excel" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标准 Excel 公式一样简单</font></font></a><font style="vertical-align: inherit;"></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>top_salesman = [Monthly Report.xlsx]August!E11
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="top_salesman = [Monthly Report.xlsx]August!E11" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发送 Telegram 通知非常简单（</font></font><a href="https://tagui.readthedocs.io/en/latest/reference.html#telegram" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第一条消息 @taguibot</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">授权其发送消息）</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>telegram id Hello World. Olá Mundo. नमस्ते दुनिया. 안녕하세요 세계. 世界,你好。
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="telegram id Hello World. Olá Mundo. नमस्ते दुनिया. 안녕하세요 세계. 世界,你好。" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<h1 tabindex="-1" dir="auto"><a id="user-content-do-rpa-any-way-you-want" class="anchor" aria-hidden="true" tabindex="-1" href="#do-rpa-any-way-you-want"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以您想要的方式进行 RPA</font></font></h1>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以使用 TagUI </font></font><a href="https://github.com/kelaberetiv/TagUI/blob/master/src/office/README.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MS Office 插件</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><a href="https://github.com/kelaberetiv/TagUI/files/7031942/Week.3.docx"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">示例文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）轻松创建 Word 文档并将其部署为 RPA 机器人，并使用 Excel 设置 RPA 数据参数。</font><font style="vertical-align: inherit;">享受功能齐全的 RPA IDE，其中包含 TagUI 步骤和工具提示工具栏、用于自动使用计算机视觉的快照工具、用于设置和运行输出的任务窗格。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您还可以使用常用的文本编辑器（如 Notepad、Notepad++、VS Code、Sublime、TextEdit、Vim 等）创建和编辑 RPA 机器人。对于 VS Code 用户，您可以安装</font></font><a href="https://marketplace.visualstudio.com/items?itemName=TagUisupport.tagui-support" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TagUI 语言扩展</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">对于 Notepad++ 用户，您可以</font></font><a href="https://github.com/tilyanPristka/TagUI-Snippets-for-NotepadPP"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在此处下载 TagUI 插件，</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以实现语法高亮、快捷方式和代码片段。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于云爱好者，您可以使用</font></font><a href="https://github.com/kelaberetiv/TagUI/issues/913" data-hovercard-type="issue" data-hovercard-url="/aisingapore/TagUI/issues/913/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">免费的 Google Cloud</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在网络浏览器或手机上运行 TagUI ，最多 5 个并发会话。</font><font style="vertical-align: inherit;">为了对在云上运行的更多控制，您可以在您的首选供应商上运行此</font></font><a href="https://hub.docker.com/r/openiap/nodered-tagui" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker 映像</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（使用边缘标签）。</font></font><a href="https://app.openiap.io/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者在 OpenFlow 上的免费 Node-RED 实例</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上运行</font><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/kelaberetiv/TagUI/master/src/office/word/word_addin_v3.png"><img src="https://raw.githubusercontent.com/kelaberetiv/TagUI/master/src/office/word/word_addin_v3.png" alt="Word插件v3" style="max-width: 100%;"></a></p>
+<h1 tabindex="-1" dir="auto"><a id="user-content-ecosystem-and-communities" class="anchor" aria-hidden="true" tabindex="-1" href="#ecosystem-and-communities"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">生态系统和社区</font></font></h1>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TagUI 拥有活跃的用户社区，并且扩展的社区拥护者基于 TagUI 为自己的社区创建了新的 RPA 工具。</font><font style="vertical-align: inherit;">Python 用户可以</font></font><a href="https://github.com/tebelorg/RPA-Python"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pip install rpa</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">来使用 #1 Python RPA 包。</font><font style="vertical-align: inherit;">已经有了</font></font><a href="https://www.nuget.org/packages/tagui" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于 C# .NET 的 TagUI</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，并且正在构建用于 Go 的 TagUI。</font><font style="vertical-align: inherit;">对于具有数千个连接器的事件驱动 RPA，请查看</font></font><a href="https://flows.nodered.org/node/node-red-contrib-tagui" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Node-RED 的 TagUI 模块</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，Node-RED 是一种流行的免费开源工作流自动化工具。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于 Microsoft </font></font><a href="https://flow.microsoft.com/en-us/desktop/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Power Automate Desktop</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户，您会很高兴知道与 TagUI 具有开箱即用的 2 路集成（如果您在 2 个应用程序之间切换，则可实现业务连续性）。</font><font style="vertical-align: inherit;">另外，请查看其他领先的开源 RPA 工具，看看它们是否能更好地满足您的需求 - </font></font><a href="https://github.com/open-rpa/openrpa"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OpenRPA</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> &amp; </font></font><a href="https://github.com/open-rpa/openflow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OpenFlow</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://www.linkedin.com/posts/openbots_openbots-studio-demo-support-for-tag-ui-activity-6788174021964943361-RrUD" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OpenBots</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://youtu.be/HAfQpNZVbKI" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Robocorp</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">它们都支持企业级编排并从其编排器运行 TagUI 机器人。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">还有中文</font></font><a href="http://www.tagui.com.cn" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://gitee.com/TagUIcn" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TagUI存储库</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">我们张开双臂欢迎更多的语言。</font></font></p>
+<h1 tabindex="-1" dir="auto"><a id="user-content-enterprise-security-by-design" class="anchor" aria-hidden="true" tabindex="-1" href="#enterprise-security-by-design"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">企业安全设计</font></font></h1>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安全考虑</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TagUI 默认实现是用户计算机上的本地 RPA 工具，任何云上都不存在</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TagUI 不是运行在供应商云上的 SaaS 或云上软件，它运行在实际用户的计算机上</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PCI-DSS、HIPAA、SOX 等行业特定认证不适用，因为 TagUI 不存储数据</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在去中心化的自下而上的 RPA 中，不建议也不需要机器人凭据，因为用户要承担责任</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据注意事项</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于静态数据，存储加密将在用户计算机的操作系统级别进行，因为它在用户计算机上运行</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于正在使用的数据，建议用户在让机器人接管之前手动输入密码等敏感信息</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于动态数据，用户的企业应用程序网站现在默认为 https，以确保数据输入和检索的安全</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多信息</font></font></p>
+<ul dir="auto">
+<li><a href="https://github.com/kelaberetiv/TagUI/raw/master/src/media/TagUI%20Enterprise%20Setup%20v1.7.docx"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅有关企业安装的指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，包括白名单详细信息、TagUI 架构和依赖项</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用-report选项，有机器人的摘要和详细日志，支持集中报告</font></font></li>
+</ul>
+<h1 tabindex="-1" dir="auto"><a id="user-content-how-to-get-started" class="anchor" aria-hidden="true" tabindex="-1" href="#how-to-get-started"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何开始</font></font></h1>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入社区并在我们的</font></font><a href="https://t.me/rpa_chat" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Telegram 聊天组</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中提出任何问题。</font><font style="vertical-align: inherit;">花一上午或下午的时间学习</font></font><a href="https://learn.aisingapore.org/courses/learn-rpa-with-tagui-beginners-course/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TagUI 免费课程</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，然后开始使用最流行的开源 RPA 软件。</font><font style="vertical-align: inherit;">与您的团队或客户分享此</font></font><a href="https://docs.google.com/presentation/d/1pltAMzr0MZsttgg1w2ORH3ontR6Q51W9/edit?usp=sharing&amp;ouid=115132044557947023533&amp;rtpof=true&amp;sd=true" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TagUI 幻灯片</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，以赢得他们使用 TagUI 的支持。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您正在维护自己的 TagUI 分支（例如技术主管、RPA 顾问、个人开发人员），请观看此</font></font><a href="https://www.youtube.com/watch?v=oq8HlJujraE" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">维护人员培训视频系列</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，以了解 TagUI 在幕后的工作原理，并帮助您修改 TagUI 的各个方面并扩展软件根据客户的具体需求，量身定制。</font></font></p>
+<h1 tabindex="-1" dir="auto"><a id="user-content-tagui-v511" class="anchor" aria-hidden="true" tabindex="-1" href="#tagui-v511"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签UI v5.11</font></font></h1>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TagUI的技术细节，例如架构图和代码库结构，</font></font><a href="https://github.com/kelaberetiv/TagUI/tree/pre_v6"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参见旧主页</font></font></a></p>
+<h1 tabindex="-1" dir="auto"><a id="user-content-credits" class="anchor" aria-hidden="true" tabindex="-1" href="#credits"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">制作人员</font></font></h1>
+<table>
+<thead>
+<tr>
+<th align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开源项目</font></font></th>
+<th align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">维护者</font></font></th>
+<th align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从</font></font></th>
+<th align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这对 TagUI 项目有何贡献</font></font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="http://www.tagui.com.cn" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TagUI 中国版</font></font></a></td>
+<td align="left"><a href="https://www.zhihu.com/people/baobiaoge" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">报表哥</font></font></a></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中国</font></font></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用指南和存储库 中文</font></font></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/tilyanPristka/TagUI-Snippets-for-NotepadPP"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Notepad++ 的 TagUI</font></font></a></td>
+<td align="left"><a href="https://www.linkedin.com/in/muhammad-ardyansyah/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿尔迪安西亚博士</font></font></a></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">印度尼西亚</font></font></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Notepad++ 的各种 TagUI 插件</font></font></td>
+</tr>
+<tr>
+<td align="left"><a href="https://marketplace.visualstudio.com/items?itemName=TagUisupport.tagui-support" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">VS Code 的 TagUI</font></font></a></td>
+<td align="left"><a href="https://www.linkedin.com/in/subhasmalik/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">苏巴斯·马利克</font></font></a></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">印度</font></font></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Visual Studio Code 的语言扩展</font></font></td>
+</tr>
+<tr>
+<td align="left"><a href="https://youtu.be/HAfQpNZVbKI" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Robocorp 的 TagUI</font></font></a></td>
+<td align="left"><a href="https://www.linkedin.com/in/nived-n-776470139/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尼维德·N</font></font></a></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">印度</font></font></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Robocorp 或 Robot Framework 中运行 TagUI</font></font></td>
+</tr>
+<tr>
+<td align="left"><a href="https://flows.nodered.org/node/node-red-contrib-tagui" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Node-RED 的 TagUI</font></font></a></td>
+<td align="left"><a href="https://www.linkedin.com/in/skadefro/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艾伦·齐默尔曼</font></font></a></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">丹麦</font></font></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">低代码事件驱动的工作流程自动化</font></font></td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.nuget.org/packages/tagui" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于 C# .NET 的 TagUI</font></font></a></td>
+<td align="left"><a href="https://www.linkedin.com/in/skadefro/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艾伦·齐默尔曼</font></font></a></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">丹麦</font></font></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">C# 版本的 TagUI (Install-Package tagui)</font></font></td>
+</tr>
+<tr>
+<td align="left"><a href="https://hub.docker.com/r/openiap/nodered-tagui" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker 的 TagUI</font></font></a></td>
+<td align="left"><a href="https://www.linkedin.com/in/skadefro/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艾伦·齐默尔曼</font></font></a></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">丹麦</font></font></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">适合所有人的可复制 RPA 环境</font></font></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/tebelorg/RPA-Python"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">适用于 Python 的 RPA</font></font></a></td>
+<td align="left"><a href="https://github.com/kensoh"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">肯·苏</font></font></a></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新加坡</font></font></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Python版本的TagUI（pip install rpa）</font></font></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/kensoh/TagUI/tree/before_aisg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签UI v3.0</font></font></a></td>
+<td align="left"><a href="https://github.com/kensoh"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">肯·苏</font></font></a></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新加坡</font></font></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AI 新加坡之前的个人项目</font></font></td>
+</tr>
+<tr>
+<td align="left"><a href="http://sikulix.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">西库利X</font></font></a></td>
+<td align="left"><a href="https://github.com/RaiMan/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">雷蒙德·霍克</font></font></a></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">德国</font></font></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">计算机视觉、OCR、输入硬件</font></font></td>
+</tr>
+<tr>
+<td align="left"><a href="http://casperjs.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">卡斯珀JS</font></font></a></td>
+<td align="left"><a href="https://github.com/n1k0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尼古拉斯·佩里奥</font></font></a></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">法国</font></font></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高级 JavaScript 执行引擎</font></font></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/ariya/phantomjs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PhantomJS</font></font></a></td>
+<td align="left"><a href="https://github.com/ariya"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿里亚·希达亚特</font></font></a></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">印度尼西亚</font></font></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基础 JavaScript 执行引擎</font></font></td>
+</tr>
+<tr>
+<td align="left"><a href="https://slimerjs.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">史莱默JS</font></font></a></td>
+<td align="left"><a href="https://github.com/laurentj"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">洛朗·儒安诺</font></font></a></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">法国</font></font></td>
+<td align="left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FireFox &lt;= v59 的浏览器自动化</font></font></td>
+</tr>
+</tbody>
+</table>
+<h1 tabindex="-1" dir="auto"><a id="user-content-sponsor" class="anchor" aria-hidden="true" tabindex="-1" href="#sponsor"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">赞助</font></font></h1>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目得到了新加坡</font></font><a href="https://www.nrf.gov.sg" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">国家研究基金会</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">人工智能新加坡计划 (AISG-RP-2019-050) 的支持。</font><font style="vertical-align: inherit;">本材料中表达的任何意见、调查结果和结论或建议均为作者的观点，并不反映新加坡国家研究基金会的观点。</font></font></p>
+</article></div>
